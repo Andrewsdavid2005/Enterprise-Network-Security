@@ -6,7 +6,7 @@
 ![Security](https://img.shields.io/badge/Security-Extended%20ACLs-red)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-## 📌 Project Overview
+## Project Overview
 
 **Enterprise Network Security with VLANs and ACLs** is a network design and configuration project implemented using Cisco Packet Tracer.
 
@@ -21,7 +21,7 @@ The network contains four departments:
 
 Each department operates in a separate IP subnet. ACLs control traffic between departments according to the organization's security requirements.
 
-## 🎯 Objectives
+## Objectives
 
 - Design an enterprise network using Cisco Packet Tracer.
 - Configure VLANs for departmental network segmentation.
@@ -32,7 +32,7 @@ Each department operates in a separate IP subnet. ACLs control traffic between d
 - Verify connectivity and security policies.
 - Practice Cisco IOS configuration and network troubleshooting.
 
-## 🏗️ Network Topology
+## Network Topology
 
 The project uses a Cisco 2911 router, a Cisco 2960 switch, and eight PCs.
 
@@ -64,7 +64,7 @@ The project uses a Cisco 2911 router, a Cisco 2960 switch, and eight PCs.
 
 The diagram represents the logical VLAN grouping. All eight PCs connect physically to the same switch, and the router provides their default gateways.
 
-## 🧰 Technologies and Devices
+## Technologies and Devices
 
 | Component | Details |
 |---|---|
@@ -78,7 +78,7 @@ The diagram represents the logical VLAN grouping. All eight PCs connect physical
 | Security | Extended IPv4 ACLs |
 | Configuration language | Cisco IOS CLI |
 
-## 🌐 VLAN and IP Addressing Plan
+## VLAN and IP Addressing Plan
 
 | VLAN ID | Department | Network | Default Gateway |
 |---:|---|---|---|
@@ -102,7 +102,7 @@ The diagram represents the logical VLAN grouping. All eight PCs connect physical
 | PC7 | 40 | `192.168.40.10` | `192.168.40.1` |
 | PC8 | 40 | `192.168.40.11` | `192.168.40.1` |
 
-## ⚙️ Network Configuration
+## Network Configuration
 
 ### 1. Creating VLANs
 
@@ -224,7 +224,7 @@ show ip interface brief
 
 Each PC must be configured with the correct IPv4 address, subnet mask, and default gateway.
 
-## 🔐 Access Control List Configuration
+## Access Control List Configuration
 
 Extended ACLs restrict traffic between departmental networks.
 
@@ -286,7 +286,7 @@ end
 
 **Security note:** These ACLs filter packets entering the router from their respective VLANs. They block the specified source-to-destination traffic; they do not automatically block every possible reverse-direction or session-related flow. The IT VLAN has no restrictive ACL applied in this configuration.
 
-## 🧪 Verification and Testing
+## Verification and Testing
 
 Use the following commands to validate the configuration.
 
@@ -324,7 +324,7 @@ Run `ping` from the relevant PC's Command Prompt.
 
 A failed ping alone does not always prove an ACL is working. Verify ACL hit counters with `show access-lists` and confirm that permitted traffic succeeds.
 
-## 📊 Results
+## Results
 
 The completed lab demonstrates:
 
@@ -337,7 +337,7 @@ The completed lab demonstrates:
 
 The lab was tested in Cisco Packet Tracer, and the reported connectivity and security tests behaved as expected.
 
-## 📂 Project Files
+## Project Files
 
 ```text
 Enterprise-Network-Security/
@@ -357,7 +357,7 @@ Enterprise-Network-Security/
 
 This is a suggested repository structure. Include only files and screenshots you have actually created.
 
-## 📚 Skills Demonstrated
+## Skills Demonstrated
 
 - Cisco IOS CLI configuration.
 - VLAN creation and segmentation.
@@ -370,7 +370,7 @@ This is a suggested repository structure. Include only files and screenshots you
 - Connectivity verification using ping and show commands.
 - Cisco Packet Tracer network simulation.
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Implement DHCP pools for each VLAN.
 - Add a dedicated server VLAN.
@@ -380,17 +380,17 @@ This is a suggested repository structure. Include only files and screenshots you
 - Implement HSRP for gateway redundancy.
 - Add a documented firewall policy and additional security tests.
 
-## 👨‍💻 Author
+## Author
 
 **Andrews GnanaSelvin D**
 
 - GitHub: [Andrewsdavid2005](https://github.com/Andrewsdavid2005)
 - LinkedIn: [Andrews GnanaSelvin D](https://www.linkedin.com/in/andrews-gnana-selvin-d)
 
-## 📄 License
+## License
 
 This project is available for educational and portfolio use. If you want to license it under the MIT License, add a `LICENSE` file containing the official MIT License text.
 
 ---
 
-⭐ If this project helps you learn VLANs, routing, and network security, feel free to explore the configuration and suggest improvements.
+If this project helps you learn VLANs, routing, and network security, feel free to explore the configuration and suggest improvements.
